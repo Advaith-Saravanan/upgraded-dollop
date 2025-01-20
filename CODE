@@ -1,0 +1,14 @@
+#CODE
+
+print("hello I will tell if you are eligible to ride a vehicle")
+birth = int(input("when were you born? "))
+
+from datetime import datetime
+
+year = datetime.now().year
+age = year - birth
+
+if age > 17:
+    print("You are eligible to ride a vehicle")
+else:
+    print("You are not eligible to ride a vehicle")
